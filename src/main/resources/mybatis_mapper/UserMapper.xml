@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fyj.demo.mapper.UserMapper">
-    <resultMap id="User" type="com.fyj.demo.dto.User">
-        <result column="userID" jdbcType="INTEGER" property="userID"/>
-        <result column="username" jdbcType="VARCHAR" property="username"/>
-        <result column="password" jdbcType="VARCHAR" property="password"/>
-        <result column="telephone" jdbcType="VARCHAR" property="telephone"/>
-    </resultMap>
+<!--    <resultMap id="User" type="com.fyj.demo.dto.User">-->
+<!--        <result column="userID" jdbcType="INTEGER" property="userID"/>-->
+<!--        <result column="username" jdbcType="VARCHAR" property="username"/>-->
+<!--        <result column="password" jdbcType="VARCHAR" property="password"/>-->
+<!--        <result column="telephone" jdbcType="VARCHAR" property="telephone"/>-->
+<!--    </resultMap>-->
 </mapper>

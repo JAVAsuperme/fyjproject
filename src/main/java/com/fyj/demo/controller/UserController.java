@@ -4,10 +4,7 @@ import com.fyj.demo.dto.User;
 import com.fyj.demo.service.UserService;
 import com.google.gson.Gson;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -20,9 +17,9 @@ import javax.annotation.Resource;
 public class UserController {
     @Resource
     private UserService userService;
-    @GetMapping("/login")
-    public String login(@RequestParam("username") String username,
-                        @RequestParam("password") String password) {
+    @GetMapping("/login/{username}/{password}")
+    public String login(@PathVariable("username") String username,
+                        @PathVariable("password") String password) {
 
         boolean loginFlag = userService.login(username, password);
 
